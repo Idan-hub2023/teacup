@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loding{
+            height: 60px;
+            width: 60px;
+            border: dotted rgb(97, 240, 97);
+            border-radius: 100px;
+            animation:lod 2s linear infinite;
+            margin-top: 25%;
+            margin-left: 45%;
+        }
+        @keyframes lod {
+            0%{
+                transform: scale(-0.2);
+                opacity: 0.2;
+            }
+            100%{
+                transform: scale(-2);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body onload="lod()">
+    <div class="loding">
+        <div class="loding2"></div>
+    </div>
+    <script>
+           function lod() {
+              setTimeout(() => {
+                  window.location.href="simple.html"
+              }, 6000);
+           }
+    </script>
+</body>
+</html>

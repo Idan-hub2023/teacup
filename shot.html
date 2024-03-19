@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="send" id="place"></div>
+    <input type="text" placeholder="messsage" id="inp1">
+    <input type="button" value="send" onclick="send()">
+    <script>
+      function send() {
+        let messsage=document.getElementById('inp1').value;
+        let place=document.getElementById('place');
+        place.textContent=messsage;
+      }
+    </script>
+</body>
+</html>
